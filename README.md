@@ -1,36 +1,128 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Heremu Chemicals - Modern Website
 
-## Getting Started
+A modern, responsive website built with Next.js for Heremu Trading PLC, a chemical engineering company based in Addis Ababa, Ethiopia.
 
-First, run the development server:
+## 🚀 Features
+
+### Modern Design & UX
+- **Responsive Design**: Fully responsive across all devices (mobile, tablet, desktop)
+- **Modern UI Components**: Clean, professional design with smooth animations
+- **Glass Morphism Effects**: Modern backdrop blur and transparency effects
+- **Custom Logo Integration**: SVG-based custom logo with brand colors
+- **Smooth Scrolling**: Enhanced navigation experience
+- **Mobile-First Approach**: Optimized for mobile users
+
+### Performance & Technology
+- **Next.js 15**: Latest React framework with App Router
+- **TypeScript**: Type-safe development
+- **Tailwind CSS**: Utility-first styling with custom components
+- **Lucide React Icons**: Modern, lightweight icon library
+- **SEO Optimized**: Proper meta tags and semantic HTML
+
+### Key Sections
+1. **Hero Section**: Eye-catching introduction with company branding
+2. **Services Showcase**: Professional display of all company services
+3. **About Section**: Company values and why choose Heremu
+4. **Contact Section**: Multiple contact methods with contact form
+5. **Mobile Navigation**: Slide-out mobile menu for better UX
+
+## 🛠 Installation & Setup
 
 ```bash
+# Clone the repository
+git clone <repository-url>
+cd heremu
+
+# Install dependencies
+npm install
+
+# Run development server
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+
+# Build for production
+npm run build
+
+# Start production server
+npm start
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 📱 Company Services
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- **Mixing & Blending**: Precision mixing and blending services
+- **Chemical Solutions**: High-quality chemical products and custom solutions
+- **Bottle Filling Service**: Professional filling services including glass ampoules
+- **Product Development**: Expert support in product development
+- **New Formulations**: Prototyping and development of new chemical formulations
+- **Packaging & Export**: Complete packing, repacking, labeling, delivery and export services
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 📞 Contact Information
 
-## Learn More
+**Heremu Trading PLC**
+- **Location**: Addis Ababa, Ethiopia
+- **Email**: izedinbedru094@gmail.com
+- **Phone Numbers**:
+  - +251 909 524 295
+  - +251 967 676 738
+  - +251 967 676 756
+  - +251 983 540 254
 
-To learn more about Next.js, take a look at the following resources:
+## 🎨 Brand Identity
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+**Company Motto**: "The Best or Nothing"
+**Brand Colors**: 
+- Primary Blue: #3B82F6 to #1E40AF
+- Accent Red: #F87171 to #DC2626
+- Background: Gradient from blue-50 to white
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 🔧 Technical Stack
 
-## Deploy on Vercel
+- **Framework**: Next.js 15.3.4
+- **Language**: TypeScript
+- **Styling**: Tailwind CSS
+- **Icons**: Lucide React
+- **Development**: Turbopack (for faster builds)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 📈 Improvements Over Original Site
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### Before (Original Website)
+- Basic HTML structure with minimal styling
+- Poor user experience and navigation
+- Not mobile-responsive
+- Limited visual appeal
+- Basic contact form
+- No modern web features
+
+### After (Modern Next.js Website)
+- Professional, modern design
+- Fully responsive and mobile-optimized
+- Interactive elements and animations
+- Improved user experience
+- SEO-friendly structure
+- Fast loading performance
+- Custom branding integration
+- Professional service showcase
+
+## 🚀 Deployment
+
+The website is ready for deployment on platforms like:
+- **Vercel** (Recommended for Next.js)
+- **Netlify**
+- **AWS Amplify**
+- **Digital Ocean App Platform**
+
+## 📝 Future Enhancements
+
+- Multi-language support (Amharic/English)
+- CMS integration for easy content management
+- Service request form with email notifications
+- Company gallery and testimonials
+- Blog section for industry insights
+- Certificate and quality assurance section
+
+## 📄 License
+
+© 2025 Heremu Trading PLC. All rights reserved.
+
+---
+
+**Built with ❤️ using Next.js and modern web technologies**
