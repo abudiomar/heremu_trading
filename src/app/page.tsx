@@ -1,44 +1,31 @@
 import Image from "next/image";
 import Link from "next/link";
 import { Phone, Mail, MapPin, ChevronRight, Beaker, Cog, Package, Truck, FlaskConical, Users, Droplets, Camera, ArrowRight } from "lucide-react";
-import MobileMenu from "./components/MobileMenu";
 import HeremuLogo from "./components/HeremuLogo";
 import ContactForm from "./components/ContactForm";
+import HeroNavbar from "./components/HeroNavbar";
 
 export default function Home() {
   return (
     <main className="min-h-screen text-gray-600 bg-gradient-to-br from-blue-50 via-white to-blue-50">
       {/* Navigation */}
-      <nav className="bg-white/80 backdrop-blur-md shadow-sm sticky top-0 z-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex justify-between items-center h-16">
-            <div className="flex items-center space-x-3">
-              <HeremuLogo className="w-12 h-12" />
-              <div>
-                <h1 className="text-xl font-bold text-gray-900">Heremu</h1>
-                <p className="text-xs text-blue-600 font-medium">CHEMICALS</p>
-              </div>
-            </div>
-            <div className="flex items-center space-x-4">
-              <div className="hidden md:flex items-center space-x-8">
-                <Link href="/about" className="text-gray-600 hover:text-blue-600 transition-colors">About</Link>
-                <Link href="/products" className="text-gray-600 hover:text-blue-600 transition-colors">Products</Link>
-                <Link href="/gallery" className="text-gray-600 hover:text-blue-600 transition-colors">Gallery</Link>
-                <Link href="#services" className="text-gray-600 hover:text-blue-600 transition-colors">Services</Link>
-                <Link href="#contact" className="text-gray-600 hover:text-blue-600 transition-colors">Contact</Link>
-                <button className="bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition-colors">
-                  Get Quote
-                </button>
-              </div>
-              <MobileMenu />
-            </div>
-          </div>
-        </div>
-      </nav>
+      <HeroNavbar />
 
       {/* Hero Section */}
       <section className="relative overflow-hidden py-20 lg:py-32">
-        <div className="absolute inset-0 bg-gradient-to-r from-blue-600/5 to-blue-800/5"></div>
+        {/* Background Image */}
+        <div className="absolute inset-0">
+          <Image
+            src="/office.jpeg"
+            alt="Heremu Trading PLC Office"
+            fill
+            className="object-cover"
+            priority
+          />
+          {/* Overlay to ensure text readability */}
+          <div className="absolute inset-0 bg-gradient-to-r from-blue-600/20 to-blue-800/20"></div>
+          <div className="absolute inset-0 bg-white/60"></div>
+        </div>
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <div className="mb-8">
@@ -60,7 +47,7 @@ export default function Home() {
                  <span>View Our Products</span>
                  <ChevronRight className="w-4 h-4" />
                </Link>
-               <Link href="#contact" className="border-2 border-gray-300 text-gray-700 px-8 py-4 rounded-lg hover:border-blue-600 hover:text-blue-600 transition-all">
+               <Link href="#contact" className="border-2 border-primary text-gray-700 px-8 py-4 rounded-lg hover:border-blue-600 hover:text-blue-600 transition-all">
                  Contact Us Today
                </Link>
              </div>
@@ -343,7 +330,7 @@ export default function Home() {
             <p className="text-xl text-gray-600">Ready to discuss your chemical solution needs?</p>
           </div>
           
-          <div className="grid lg:grid-cols-2 gap-12">
+          <div className="grid lg:grid-cols-2 gap-12 mb-12">
             <div className="space-y-8">
               <div className="flex items-start space-x-4">
                 <div className="bg-blue-100 rounded-lg p-3">
@@ -382,6 +369,37 @@ export default function Home() {
             </div>
             
             <ContactForm />
+          </div>
+
+          {/* Google Maps Section */}
+          <div className="bg-white rounded-xl p-6 shadow-lg">
+            <div className="text-center mb-6">
+              <h3 className="text-2xl font-bold text-gray-900 mb-2">Find Us</h3>
+              <p className="text-gray-600">Visit our office in Addis Ababa, Ethiopia</p>
+            </div>
+            <div className="relative w-full h-96 rounded-lg overflow-hidden shadow-md">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1968.640729808!2d38.7469!3d9.0320!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x164b85cef5ab402d%3A0x8467b6b037a24d49!2sAddis%20Ababa%2C%20Ethiopia!5e0!3m2!1sen!2sus!4v1703123456789!5m2!1sen!2sus"
+                width="100%"
+                height="100%"
+                style={{ border: 0 }}
+                allowFullScreen={true}
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                title="Heremu Trading PLC Location - Addis Ababa, Ethiopia"
+              />
+            </div>
+            <div className="mt-4 text-center">
+              <a
+                href="https://maps.app.goo.gl/EfYgyhsAtAEkJBU79"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center space-x-2 bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition-colors font-semibold"
+              >
+                <MapPin className="w-4 h-4" />
+                <span>Get Directions</span>
+              </a>
+            </div>
           </div>
         </div>
       </section>

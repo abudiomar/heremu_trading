@@ -375,10 +375,10 @@ export default function Gallery() {
           className="grid grid-cols-2 md:grid-cols-4 gap-6 mt-16 pt-12 border-t border-gray-200"
         >
           {[
-            { value: '16+', label: 'Production Images' },
-            { value: '2020', label: 'Established' },
-            { value: 'Latest', label: 'Technology' },
-            { value: '100%', label: 'Quality Focused' }
+            { value: '5+', label: 'Years Experience' },
+            { value: '50+', label: 'Industrial Clients' },
+            { value: 'ISO', label: 'Quality Standards' },
+            { value: '24/7', label: 'Production Capacity' }
           ].map((stat, index) => (
             <motion.div
               key={index}

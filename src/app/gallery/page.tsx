@@ -3,6 +3,7 @@ import Link from "next/link";
 import { ArrowLeft, Camera } from "lucide-react";
 import HeremuLogo from "../components/HeremuLogo";
 import Gallery from "../components/Gallery";
+import HeroNavbar from "../components/HeroNavbar";
 
 export const metadata: Metadata = {
   title: "Manufacturing Gallery - Chemical Production Facility | Heremu Trading PLC",
@@ -45,23 +46,7 @@ export default function GalleryPage() {
   return (
     <main className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-blue-50">
       {/* Navigation */}
-      <nav className="bg-white/80 backdrop-blur-md shadow-sm sticky top-0 z-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex justify-between items-center h-16">
-            <Link href="/" className="flex items-center space-x-3 hover:opacity-80 transition-opacity">
-              <HeremuLogo className="w-12 h-12" />
-              <div>
-                <h1 className="text-xl font-bold text-gray-900">Heremu</h1>
-                <p className="text-xs text-blue-600 font-medium">CHEMICALS</p>
-              </div>
-            </Link>
-            <Link href="/" className="flex items-center space-x-2 text-gray-600 hover:text-blue-600 transition-colors">
-              <ArrowLeft className="w-4 h-4" />
-              <span>Back to Home</span>
-            </Link>
-          </div>
-        </div>
-      </nav>
+      <HeroNavbar />
 
       {/* Hero Section */}
       <section className="py-20 lg:py-32">
